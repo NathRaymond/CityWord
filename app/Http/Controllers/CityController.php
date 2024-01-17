@@ -14,25 +14,14 @@ class CityController extends Controller
     public function city_index(Request $request)
     {
         if ($request->ajax()) {
-            $cities = City::with('state.country')->whereNotNull('id');
+            $cities = City::with('state.country')->whereNotNull('id')->get();
             return Datatables::of($cities)
                 ->addIndexColumn()
                 ->make(true);
         }
+
         return view('index');
     }
-
-    // public function city_index(Request $request)
-    // {
-    //     if ($request->ajax()) {
-    //         $cities = City::with('state.country')->whereNotNull('id')->get();
-    //         return Datatables::of($cities)
-    //             ->addIndexColumn()
-    //             ->make(true);
-    //     }
-
-    //     return view('index');
-    // }
 
     public function get_city_data()
     {
