@@ -32,23 +32,51 @@
                                             Export Reords</a>
                                     </div>
                                     <div class="card-body">
-                                        <table
-                                            class="table table-bordered dt-responsive nowrap table-striped align-middle data-table1"
-                                            style="width:100%">
-                                            <thead>
-                                                <tr>
-                                                    <th data-ordering="false">S/N</th>
-                                                    <th data-ordering="false">City</th>
-                                                    <th>State</th>
-                                                    <th>Country </th>
-                                                    <th>Latitude</th>
-                                                    <th>Longitude</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <input type="text" class="form-control" id="specialsearch">
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div id="searchtable" style="display: none">
+                                            <table
+                                                class="table table-bordered dt-responsive nowrap table-striped align-middle table-specialsearch" 
+                                                style="width:100%">
+                                                <thead>
+                                                    <tr>
+                                                        <th data-ordering="false">S/N</th>
+                                                        <th data-ordering="false">City</th>
+                                                        <th>State</th>
+                                                        <th>Country </th>
+                                                        <th>Latitude</th>
+                                                        <th>Longitude</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
 
-                                            </tbody>
-                                        </table>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div id="alltable">
+
+                                            <table
+                                                class="table table-bordered dt-responsive nowrap table-striped align-middle data-table1"
+                                                style="width:100%">
+                                                <thead>
+                                                    <tr>
+                                                        <th data-ordering="false">S/N</th>
+                                                        <th data-ordering="false">City</th>
+                                                        <th>State</th>
+                                                        <th>Country </th>
+                                                        <th>Latitude</th>
+                                                        <th>Longitude</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
