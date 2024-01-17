@@ -33,14 +33,14 @@
                                     </div>
                                     <div class="card-body">
                                         <table
-                                            class="table table-bordered dt-responsive nowrap table-striped align-middle data-table1"
+                                            class="table table-bordered dt-responsive nowrap table-striped align-middle data-table5"
                                             style="width:100%">
                                             <thead>
                                                 <tr>
                                                     <th data-ordering="false">S/N</th>
                                                     <th data-ordering="false">City</th>
                                                     <th>State</th>
-                                                    {{-- <th>Country </th> --}}
+                                                    <th>Country </th>
                                                     <th>Latitude</th>
                                                     <th>Longitude</th>
                                                 </tr>

@@ -1,6 +1,6 @@
 <script type="text/javascript">
     $(function() {
-        var table = $('.data-table1').DataTable({
+        var table = $('.data-table5').DataTable({
             processing: true,
             serverSide: true,
             ajax: "{{ route('city_page') }}",
@@ -19,17 +19,13 @@
                 {
                     data: 'state.name',
                     name: 'state.name',
-                    render: function(data, type, row, index) {
-                        return data || '';
-                    },
+                    
                 },
-                // {
-                //     data: 'state.country.name', // use the relationship name and country column name
-                //     name: 'state.country.name',
-                //     render: function(data, type, row, index) {
-                //         return data || '';
-                //     },
-                // },
+                {
+                    data: 'state.country.name', // use the relationship name and country column name
+                    name: 'state.country.name',
+                   
+                },
                 {
                     data: 'latitude',
                     name: 'latitude'

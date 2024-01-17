@@ -43,49 +43,4 @@ class CityController extends Controller
     {
         return Excel::download(new CityExport, 'cities.xlsx');
     }
-
-
-    // public function city_index(Request $request)
-    // {
-
-    //     if ($request->ajax()) {
-    //         $cities = City::whereNotNull('id')->with('stateName')->get();
-
-    //         return Datatables::of($cities)
-    //             ->addIndexColumn()
-    //             ->make(true);
-    //     }
-
-    //     return view('index');
-    // }
-
-    // public function index(Request $request)
-    // {
-
-    //     if ($request->ajax()) {
-    //         $cities = City::whereNotNull('id');
-
-    //         return Datatables::of($cities)
-    //             ->addIndexColumn()
-    //             ->make(true);
-    //     }
-
-    //     return view('city');
-    // }
-
-    // public function indexpage(Request $request)
-    // {
-
-    //     if ($request->ajax()) {
-    //         $cities = City::whereNotNull('id');
-
-    //         return Datatables::of($cities)
-    //             ->addIndexColumn()
-    //             ->make(true);
-    //     }
-
-    //     return view('city');
-    // }
-
-
 }
