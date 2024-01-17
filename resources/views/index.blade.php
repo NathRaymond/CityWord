@@ -33,7 +33,7 @@
                                     </div>
                                     <div class="card-body">
                                         <table
-                                            class="table table-bordered dt-responsive nowrap table-striped align-middle data-table5"
+                                            class="table table-bordered dt-responsive nowrap table-striped align-middle data-table1"
                                             style="width:100%">
                                             <thead>
                                                 <tr>
