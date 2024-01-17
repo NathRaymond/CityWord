@@ -32,7 +32,13 @@
                                             Export Reords</a>
                                     </div>
                                     <div class="card-body">
+                                        {{-- <div class="row">
+                                            <div class="col-4">
+                                                <input type="text" class="form-control" id="specialsearch">
+                                            </div>
+                                        </div> --}}
                                         <div class="row">
+                                            <div class="col-md-8"></div>
                                             <div class="col-4">
                                                 <input type="text" class="form-control" id="specialsearch">
                                             </div>
@@ -40,7 +46,7 @@
                                         <br>
                                         <div id="searchtable" style="display: none">
                                             <table
-                                                class="table table-bordered dt-responsive nowrap table-striped align-middle table-specialsearch" 
+                                                class="table table-bordered dt-responsive nowrap table-striped align-middle table-specialsearch"
                                                 style="width:100%">
                                                 <thead>
                                                     <tr>
