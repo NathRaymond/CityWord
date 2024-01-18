@@ -42,16 +42,19 @@ class CityController extends Controller
         $q = $request->q;
 
         $data = City::where(function ($query) use ($q) {
-            $query->where('name', 'LIKE', '%' . $q . '%')
+            $query->where('name', 'LIKE', $q . '%')
                 ->orWhereHas('state', function ($stateQuery) use ($q) {
-                    $stateQuery->where('name', 'LIKE', '%' . $q . '%')
+                    $stateQuery->where('name', 'LIKE', $q . '%')
                         ->orWhereHas('country', function ($countryQuery) use ($q) {
-                            $countryQuery->where('name', 'LIKE', '%' . $q . '%');
+                            $countryQuery->where('name', 'LIKE', $q . '%');
                         });
                 });
-        })->with('state.country')->get();
+        })->with('state.country');//->take(3000)->get();
+        // return $data;
 
-        return $data;
+        return Datatables::of($data)
+        ->addIndexColumn()
+        ->make(true);
     }
 
 
