@@ -28,19 +28,14 @@
     <link href="{{ asset('assets/css/app.min.css') }}" rel="stylesheet" type="text/css" />
     <!-- custom Css-->
     <link href="{{ asset('assets/css/custom.min.css') }}" rel="stylesheet" type="text/css" />
-  
-    <link href="https://themesbrand.com/velzon/html/interactive/assets/css/bootstrap.min.css" rel="stylesheet"
-        type="text/css" />
-    <!-- Icons Css -->
-    <link href="https://themesbrand.com/velzon/html/interactive/assets/css/icons.min.css" rel="stylesheet"
-        type="text/css" />
-    <!-- App Css-->
-    <link href="https://themesbrand.com/velzon/html/interactive/assets/css/app.min.css" rel="stylesheet"
-        type="text/css" />
+
+    <link rel="stylesheet" href="{{ asset('assets/css/dataTables.bootstrap5.min.css') }}" />
+    <!--datatable responsive css-->
+    <link rel="stylesheet" href="{{ asset('assets/css/responsive.bootstrap.min.css') }}" />
+
+    <link rel="stylesheet" href="{{ asset('assets/css/buttons.dataTables.min.css') }}" />
     <!-- custom Css-->
-    <link href="https://themesbrand.com/velzon/html/interactive/assets/css/custom.min.css" rel="stylesheet"
-        type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/all.min.css') }}">
     <style>
         .description {
             word-wrap: break-word;
@@ -112,14 +107,27 @@
     <script src="{{ asset('assets/js/pages/dashboard-ecommerce.init.js') }}"></script>
 
     <!-- JAVASCRIPT -->
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    {{-- <script src="{{ asset('assets/js/app.js') }}"></script>
-    <script src="{{ asset('assets\js\requestController.js') }}"></script>
-    <script src="{{ asset('assets\js\formController.js') }}"></script> --}}
 
-        @yield('scripts')
+
+    <!--datatable js-->
+    <script src="{{ asset('assets/js/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('assets/js/dataTables.bootstrap5.min.js') }}"></script>
+    <script src="{{ asset('assets/js/dataTables.responsive.min.js') }}"></script>
+    <script src="{{ asset('assets/js/dataTables.buttons.min.js') }}"></script>
+    <script src="{{ asset('assets/js/buttons.print.min.js') }}"></script>
+    <script src="{{ asset('assets/js/buttons.html5.min.js') }}"></script>
+    <script src="{{ asset('assets/js/vfs_fonts.js') }}"></script>
+    <script src="{{ asset('assets/js/pdfmake.min.js') }}"></script>
+    <script src="{{ asset('assets/js/jszip.min.js') }}"></script>
+
+    <script src="{{ asset('assets/js/pages/datatables.init.js') }}"></script>
+    <script src="{{ asset('assets/js/app.js') }}"></script>
+    <script src="{{ asset('assets\js\requestController.js') }}"></script>
+    <script src="{{ asset('assets\js\formController.js') }}"></script>
+
+    @yield('scripts')
 </body>
 
 </html>
